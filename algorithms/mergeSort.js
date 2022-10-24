@@ -74,7 +74,7 @@ async function merge(arr, low, mid, high) {
             arr[k].style.backgroundColor = 'lightgreen'; 
             await delayTime(delay2); 
         }
-        arr[k].style.height = `${right[i]}px`; 
+        arr[k].style.height = `${right[j]}px`; 
         k++; 
         j++; 
         await delayTime(delay2); 
