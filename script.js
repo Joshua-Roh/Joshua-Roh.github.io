@@ -67,6 +67,12 @@ const anim = (bar, height, color) => {
   });
 };
 
+const anim2 = (bar, height) => {
+  setTimeout(() => {
+    bar.style.height = height + "px";
+  });
+};
+
 generate.addEventListener("click", () => { 
   generateNewArray(Number(arraySizeValue.value));
 });
