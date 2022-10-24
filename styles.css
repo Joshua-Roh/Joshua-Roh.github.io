@@ -64,8 +64,6 @@ html {
   height: 100%;
   margin: 35px;
   align-items: flex-start;
-  transform: rotate(180deg) scaleX(-1); 
-  transition: 2s all ease; 
 }
 
 #indiv_bar {
