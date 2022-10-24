@@ -27,5 +27,7 @@ async function bubbleSort(arr) {
 
 const bubbleSortBtn = document.getElementById('bbl-sort'); 
 bubbleSortBtn.addEventListener('click', async function() {
+  disableBtn(); 
   await bubbleSort(children); 
+  enableBtn(); 
 })
