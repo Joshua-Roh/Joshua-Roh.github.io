@@ -44,11 +44,12 @@ async function selectionSort(arr) {
       anim(arr[i], arr[i].value, sorted); 
       await delayTime(delay2); 
     }
-  
-    c = 0; 
+
 }
 
 const selectSortbtn = document.getElementById("select-sort");
 selectSortbtn.addEventListener("click", async function() {  
+    disableBtn(); 
     await selectionSort(children); 
+    enableBtn(); 
 });

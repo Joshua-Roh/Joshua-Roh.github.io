@@ -30,6 +30,7 @@ async function merge(arr, low, mid, high) {
                 await delayTime(delay2); 
             }
             arr[k].style.height = `${left[i]}px`; 
+            k++; 
             i++; 
             await delayTime(delay2); 
 
@@ -42,11 +43,11 @@ async function merge(arr, low, mid, high) {
                 await delayTime(delay2);
             }
             arr[k].style.height = `${right[j]}px`; 
+            k++; 
             j++; 
             await delayTime(delay2); 
             
         }
-        k++; 
         await delayTime(delay2); 
     }
     await delayTime(delay2); 
@@ -58,13 +59,10 @@ async function merge(arr, low, mid, high) {
         } else {
             arr[k].style.backgroundColor = 'lightgreen'; 
             await delayTime(delay2); 
-            arr[k].value = left[i]; 
-            k++; 
-            i++; 
         }
         arr[k].style.height = `${left[i]}px`; 
-        i++;
-        k++;  
+        k++;
+        i++;   
         await delayTime(delay2); 
 
     }
