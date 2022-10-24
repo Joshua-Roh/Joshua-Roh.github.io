@@ -28,8 +28,8 @@ async function merge(arr, low, mid, high) {
             } else {
                 arr[k].style.backgroundColor = 'lightgreen'; 
             }
-            arr[k].value = left[i]; 
-            anim2(arr[k], arr[k].value);  
+            arr[k].value = left[i];
+            arr[k].style.height = `${left[i]}px`;    
             i++; 
 
         } else {
@@ -38,8 +38,8 @@ async function merge(arr, low, mid, high) {
             } else {
                 arr[k].style.backgroundColor = 'lightgreen'; 
             }
-            arr[k].value = right[j]; 
-            anim2(arr[k], arr[k].value); 
+            arr[k].value = right[j];
+            arr[k].style.height = `${right[j]}px`;   
             j++;       
         }
         k++; 
@@ -53,7 +53,7 @@ async function merge(arr, low, mid, high) {
             arr[k].style.backgroundColor = 'lightgreen'; 
         }
         arr[k].value = left[i]; 
-        anim2(arr[k], arr[k].value);    
+        arr[k].style.height = `${left[i]}px`;      
         k++; 
         i++; 
 
@@ -67,7 +67,7 @@ async function merge(arr, low, mid, high) {
             arr[k].style.backgroundColor = 'lightgreen'; 
         }
         arr[k].value = right[j]; 
-        anim2(arr[k], arr[k].value); 
+        arr[k].style.height = `${right[j]}px`;  
         k++; 
         j++; 
         
