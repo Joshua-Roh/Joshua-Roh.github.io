@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <div id="nav">
+      <div class = "nav-item left" id = "title">Sorting Visualizer</div>
+      <button class="nav-item left" id="generate">Generate New Array</button>
+      <div class="container row" id="range-slider">
+        <div> Array Size:</div>
+        <input
+          type="range"
+          min="5"
+          max="100"
+          value="50"
+          class="nav-item left"
+          id="array-size"
+        />
+        <div>Speed:</div>
+        <input
+          type="range"
+          min="25"
+          max="315"
+          value="60"
+          class="nav-item left"
+          id="sort-speed"
+        />
+      </div>
+      <div class="container row" id="sort-list">
+        <button class="nav-item right" id="bbl-sort">Bubble Sort</button>
+        <button class="nav-item right" id="quick-sort">Quick Sort</button>
+        <button class="nav-item right" id="select-sort">Selection Sort</button>
+        <button class="nav-item right" id="merge-sort">Merge Sort</button>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <section class="sorting-section">
+        <div class="container row" id="bar-container"></div>
+      </section>
+    </div>
+    <script src="script.js" async defer></script>
+    <script src="algorithms/bubbleSort.js" async defer></script>
+    <script src = "algorithms/quickSort.js" async defer></script>
+    <script src = "algorithms/selectionSort.js" async defer></script>
+    <script src = "algorithms/mergeSort.js" async defer></script>
+  </body>
+</html>
