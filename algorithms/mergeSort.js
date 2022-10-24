@@ -88,5 +88,7 @@ const mergeSortBtn = document.getElementById('merge-sort');
 mergeSortBtn.addEventListener('click', async function() {
     let l = 0; 
     let r = children.length - 1; 
+    disableBtn(); 
     await mergeSort(children, l, r); 
+    enableBtn(); 
 })
