@@ -62,10 +62,10 @@ async function quickSort(arr, low, high) {
 }
 
 const quickSortBtn = document.getElementById('quick-sort'); 
-quickSortBtn.addEventListener('click', async function() { 
+quickSortBtn.addEventListener('click', async function() {
+    disableBtn();  
     let low = 0; 
     let n = children.length;
-    disableBtn(); 
     await quickSort(children, low, n - 1);
     enableBtn(); 
 })

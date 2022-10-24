@@ -49,8 +49,6 @@ async function selectionSort(arr) {
 }
 
 const selectSortbtn = document.getElementById("select-sort");
-selectSortbtn.addEventListener("click", async function() { 
-    disableBtn(); 
+selectSortbtn.addEventListener("click", async function() {  
     await selectionSort(children); 
-    enableBtn(); 
 });
