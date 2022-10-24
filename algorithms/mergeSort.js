@@ -29,8 +29,7 @@ async function merge(arr, low, mid, high) {
                 arr[k].style.backgroundColor = 'lightgreen'; 
             }
             arr[k].value = left[i]; 
-            anim2(arr[k], arr[k].value); 
-            k++; 
+            anim2(arr[k], arr[k].value);  
             i++; 
 
         } else {
@@ -41,10 +40,9 @@ async function merge(arr, low, mid, high) {
             }
             arr[k].value = right[j]; 
             anim2(arr[k], arr[k].value); 
-            k++; 
-            j++; 
-            
+            j++;       
         }
+        k++; 
     }
 
     while (i < n1) {
@@ -56,8 +54,8 @@ async function merge(arr, low, mid, high) {
         }
         arr[k].value = left[i]; 
         anim2(arr[k], arr[k].value); 
-        k++;
         i++;   
+        k++; 
 
     }
 
@@ -70,8 +68,8 @@ async function merge(arr, low, mid, high) {
         }
         arr[k].value = right[j]; 
         anim2(arr[k], arr[k].value); 
-        k++; 
         j++; 
+        k++; 
         
     }
 
