@@ -108,7 +108,6 @@ function generateNewArray(arrSize) {
 generateNewArray(Number(arraySizeValue.value))
 
 document.getElementById('array-size').addEventListener('input', function() {
-  document.getElementById('arr-size-value').textContent = arraySizeValue.value;
   generateNewArray(Number(arraySizeValue.value));
 }, false); 
 
