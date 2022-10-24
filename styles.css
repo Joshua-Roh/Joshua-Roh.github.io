@@ -77,7 +77,7 @@ html {
 .flex-item {
   display: flex; 
   border: 1pt solid black; 
-  transition: 0.1s all ease; 
+  transition: height 0.1s;  
 }
 
 #sort-btn {
