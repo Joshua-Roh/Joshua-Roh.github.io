@@ -21,63 +21,53 @@ async function merge(arr, low, mid, high) {
     let i = 0, j = 0, k = low; 
 
     while (i < n1 && j < n2) {
+        await delayTime(delay2); 
         if (left[i] <= right[j]) {
             if ((n1+n2) === arr.length) {
-                arr[k].style.backgroundColor = 'green'; 
-                await delayTime(delay2); 
+                arr[k].style.backgroundColor = 'green';  
             } else {
                 arr[k].style.backgroundColor = 'lightgreen'; 
-                await delayTime(delay2); 
             }
             arr[k].style.height = `${left[i]}px`; 
             k++; 
             i++; 
-            await delayTime(delay2); 
 
         } else {
             if ((n1+n2) === arr.length) {
-                arr[k].style.backgroundColor = 'green';
-                await delayTime(delay2);  
+                arr[k].style.backgroundColor = 'green'; 
             } else {
                 arr[k].style.backgroundColor = 'lightgreen'; 
-                await delayTime(delay2);
             }
             arr[k].style.height = `${right[j]}px`; 
             k++; 
             j++; 
-            await delayTime(delay2); 
             
         }
-        await delayTime(delay2); 
     }
-    await delayTime(delay2); 
 
     while (i < n1) {
+        await delayTime(delay2); 
         if ((n1+n2) === arr.length) {
             arr[k].style.backgroundColor = 'green';
-            await delayTime(delay2); 
         } else {
             arr[k].style.backgroundColor = 'lightgreen'; 
-            await delayTime(delay2); 
         }
         arr[k].style.height = `${left[i]}px`; 
         k++;
         i++;   
-        await delayTime(delay2); 
 
     }
 
     while (j < n2) { 
+        await delayTime(delay2); 
         if ((n1+n2) === arr.length) {
             arr[k].style.backgroundColor = 'green';
         } else {
             arr[k].style.backgroundColor = 'lightgreen'; 
-            await delayTime(delay2); 
         }
         arr[k].style.height = `${right[j]}px`; 
         k++; 
         j++; 
-        await delayTime(delay2); 
         
     }
 
