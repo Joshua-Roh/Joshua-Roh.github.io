@@ -90,7 +90,7 @@ function generateNewArray(arrSize) {
   for (let i = 0; i < arrSize; i++) {
     document.getElementById(
       "bar-container"
-    ).innerHTML += `<div id = 'indiv_bar'></div>`;
+    ).innerHTML += `<div class = 'flex-item' id = 'indiv_bar'></div>`;
   }
 
   //children[arrSize] = document.getElementById(

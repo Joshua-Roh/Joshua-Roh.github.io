@@ -74,6 +74,11 @@ html {
   margin: 10px 2px 0px 2px;
 }
 
+.flex-item {
+  border: 1pt solid black; 
+  transition: 0.1s all ease; 
+}
+
 #sort-btn {
   height: 50px;
   width: 150px;
