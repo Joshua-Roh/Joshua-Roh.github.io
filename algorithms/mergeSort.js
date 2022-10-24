@@ -24,22 +24,26 @@ async function merge(arr, low, mid, high) {
         if (left[i] <= right[j]) {
             if ((n1+n2) === arr.length) {
                 arr[k].style.backgroundColor = 'green'; 
+                await delayTime(delay2); 
             } else {
-                arr[k].value = left[i];
-                anim(arr[k], arr[k].value, 'lightgreen'); 
-                i++; 
+                arr[k].style.backgroundColor = 'lightgreen'; 
                 await delayTime(delay2); 
             }
+            arr[k].style.height = `${left[i]}px`; 
+            i++; 
+            await delayTime(delay2); 
 
         } else {
             if ((n1+n2) === arr.length) {
-                arr[k].style.backgroundColor = 'green'; 
+                arr[k].style.backgroundColor = 'green';
+                await delayTime(delay2);  
             } else {
-                arr[k].value = right[j]; 
-                anim(arr[k], arr[k].value, 'lightgreen'); 
-                j++; 
+                arr[k].style.backgroundColor = 'lightgreen'; 
                 await delayTime(delay2);
             }
+            arr[k].style.height = `${right[j]}px`; 
+            j++; 
+            await delayTime(delay2); 
             
         }
         k++; 
@@ -50,13 +54,18 @@ async function merge(arr, low, mid, high) {
     while (i < n1) {
         if ((n1+n2) === arr.length) {
             arr[k].style.backgroundColor = 'green';
+            await delayTime(delay2); 
         } else {
-            arr[k].value = left[i];
-            anim(arr[k], arr[k].value, 'lightgreen');  
+            arr[k].style.backgroundColor = 'lightgreen'; 
+            await delayTime(delay2); 
+            arr[k].value = left[i]; 
             k++; 
             i++; 
-            await delayTime(delay2); 
         }
+        arr[k].style.height = `${left[i]}px`; 
+        i++;
+        k++;  
+        await delayTime(delay2); 
 
     }
 
@@ -64,12 +73,13 @@ async function merge(arr, low, mid, high) {
         if ((n1+n2) === arr.length) {
             arr[k].style.backgroundColor = 'green';
         } else {
-            arr[k].value = right[j]; 
-            anim(arr[k], arr[k].value, 'lightgreen'); 
-            k++; 
-            j++; 
+            arr[k].style.backgroundColor = 'lightgreen'; 
             await delayTime(delay2); 
         }
+        arr[k].style.height = `${right[i]}px`; 
+        k++; 
+        j++; 
+        await delayTime(delay2); 
         
     }
 
