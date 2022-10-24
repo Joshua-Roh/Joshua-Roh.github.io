@@ -53,9 +53,9 @@ async function merge(arr, low, mid, high) {
             arr[k].style.backgroundColor = 'lightgreen'; 
         }
         arr[k].value = left[i]; 
-        anim2(arr[k], arr[k].value); 
-        i++;   
+        anim2(arr[k], arr[k].value);    
         k++; 
+        i++; 
 
     }
 
@@ -68,8 +68,8 @@ async function merge(arr, low, mid, high) {
         }
         arr[k].value = right[j]; 
         anim2(arr[k], arr[k].value); 
-        j++; 
         k++; 
+        j++; 
         
     }
 
