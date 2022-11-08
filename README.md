@@ -12,3 +12,8 @@
 ![Screenshot](Preview1.jpg)
 ![Screenshot](Preview2.jpg)
 ![Screenshot](Preview3.jpg)
+
+## Try it Out!
+- [Visit the website](https://joshua-roh.github.io/)
+- Adjust the size of the array, and the speed of processing
+- Select the algorithm you want to visualize
