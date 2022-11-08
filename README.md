@@ -9,9 +9,9 @@
 ### This visualizer allows greater control for the user to change the input array size and the speed of the sort processing.
 
 ## Preview
-![Screenshot](Preview1.jpg)
-![Screenshot](Preview2.jpg)
-![Screenshot](Preview3.jpg)
+![Screenshot](assets/Preview1.jpg)
+![Screenshot](assets/Preview2.jpg)
+![Screenshot](assets/Preview3.jpg)
 
 ## Try it Out!
 - [Visit the website](https://joshua-roh.github.io/)
